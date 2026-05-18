@@ -1,0 +1,122 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF5500;
+}
+
+/* Animations */
+@keyframes bounce-slow {
+    0%, 100% {
+        transform: translateY(-5%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 3s infinite;
+}
+
+/* Base resets for mobile */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hide mobile CTA behind footer when scrolled to very bottom */
+.footer-visible #mobile-cta {
+    transform: translateY(100%);
+}
+
+/* Global Compactness / Zoom Out Effect */
+html {
+    scroll-behavior: smooth;
+    /* This makes the whole site feel more professional and high-end */
+}
+
+@media (min-width: 1024px) {
+    body {
+        zoom: 0.90;
+        -moz-transform: scale(0.90);
+        -moz-transform-origin: top center;
+    }
+}
+
+/* Ensure fixed elements stay fixed even with zoom/scale */
+#navbar, #mobile-cta, .fixed {
+    zoom: 1 !important;
+}
+
+/* Premium Glassmorphic / Glowing Cards */
+.glow-card {
+    position: relative;
+    background: rgba(22, 22, 22, 0.65);
+    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glow-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glow-card:hover {
+    border-color: rgba(255, 85, 0, 0.35);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 85, 0, 0.15);
+    background: rgba(26, 26, 26, 0.75);
+    transform: translateY(-4px);
+}
+.glow-card:hover::before {
+    background: linear-gradient(to bottom, rgba(255, 85, 0, 0.5), rgba(255, 85, 0, 0.05));
+}
+
+/* Infinite Text Marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: inline-flex;
+    animation: marquee 25s linear infinite;
+}
+
+/* Hide Spinners in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide Spinners in Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
