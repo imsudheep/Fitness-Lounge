@@ -194,7 +194,7 @@
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="text-sm text-brand-neon font-bold tracking-widest uppercase mb-3">Our Programs</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-black uppercase">Experience Reliable <span class="text-brand-neon">Fitness Services</span></h3>
+                <h3 class="text-2xl sm:text-4xl md:text-5xl font-display font-black uppercase text-center">Experience Reliable <span class="text-brand-neon">Fitness Services</span></h3>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -343,7 +343,7 @@
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="text-sm text-brand-neon font-bold tracking-widest uppercase mb-3">Subscription</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-black uppercase">Choose Your <span class="text-brand-neon">Pricing</span></h3>
+                <h3 class="text-2xl sm:text-4xl md:text-5xl font-display font-black uppercase text-center">Choose Your <span class="text-brand-neon">Pricing</span></h3>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
@@ -419,7 +419,7 @@
     <section class="py-24 bg-brand-dark scroll-mt-24" id="gallery">
         <div class="container mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h3 class="text-4xl md:text-5xl font-display font-black uppercase">Inside <span class="text-brand-neon">Fitness Lounge</span></h3>
+                <h3 class="text-2xl sm:text-4xl md:text-5xl font-display font-black uppercase text-center">Inside <span class="text-brand-neon">Fitness Lounge</span></h3>
             </div>
             
             <!-- CSS Grid Masonry approximation -->
@@ -566,50 +566,53 @@
         <div class="absolute top-1/4 left-[-10%] w-72 md:w-96 h-72 md:h-96 bg-brand-neon/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
         <div class="absolute bottom-1/4 right-[-10%] w-72 md:w-96 h-72 md:h-96 bg-brand-neon/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
 
-        <div class="container mx-auto px-6 relative z-10">
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="text-sm text-brand-neon font-bold tracking-widest uppercase mb-3">Interactive Tool</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-black uppercase">Fitness & <span class="text-brand-neon">Plan Matcher</span></h3>
+                <h3 class="text-2xl sm:text-4xl md:text-5xl font-display font-black uppercase text-center">Fitness & <span class="text-brand-neon">Plan Matcher</span></h3>
                 <p class="text-gray-400 mt-4 text-sm md:text-base">Calculate your daily calorie requirements instantly and discover the perfect membership plan designed to hit your specific targets.</p>
             </div>
 
-            <div class="max-w-5xl mx-auto glow-card rounded-3xl p-4 xs:p-6 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="max-w-5xl mx-auto glow-card rounded-3xl p-3.5 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
                 <div class="grid lg:grid-cols-2 gap-6 lg:gap-12 items-start">
                     
                     <!-- Inputs Form -->
-                    <div class="space-y-4 xs:space-y-6">
-                        <h4 class="text-xl sm:text-2xl font-bold uppercase text-white tracking-wide border-b border-white/10 pb-3 xs:pb-4 flex items-center gap-2">
+                    <div class="space-y-4 sm:space-y-6">
+                        <h4 class="text-xl sm:text-2xl font-bold uppercase text-white tracking-wide border-b border-white/10 pb-3 flex items-center gap-2">
                             <i data-lucide="calculator" class="text-brand-neon"></i> Your Stats
                         </h4>
 
                         <!-- Gender Selector -->
-                        <div>
-                            <span class="block text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5">Gender</span>
-                            <div class="grid grid-cols-2 gap-2 sm:gap-4">
-                                <button type="button" id="btn-male" class="gender-btn active py-2.5 sm:py-3 bg-brand-neon text-black font-black uppercase tracking-wider rounded-xl transition-all border border-brand-neon hover:bg-brand-neon hover:text-black text-xs sm:text-sm">Male</button>
-                                <button type="button" id="btn-female" class="gender-btn py-2.5 sm:py-3 bg-transparent text-gray-400 font-bold uppercase tracking-wider rounded-xl transition-all border border-white/10 hover:border-brand-neon hover:text-brand-neon text-xs sm:text-sm">Female</button>
+                        <div class="flex items-center justify-between sm:block border-b border-white/5 pb-3 sm:pb-0 sm:border-0">
+                            <span class="block text-xs sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-0 sm:mb-2.5">Gender</span>
+                            <div class="grid grid-cols-2 gap-2 sm:gap-4 w-44 sm:w-full">
+                                <button type="button" id="btn-male" class="gender-btn active py-2 sm:py-3 bg-brand-neon text-black font-black uppercase tracking-wider rounded-xl transition-all border border-brand-neon hover:bg-brand-neon hover:text-black text-xs sm:text-sm">Male</button>
+                                <button type="button" id="btn-female" class="gender-btn py-2 sm:py-3 bg-transparent text-gray-400 font-bold uppercase tracking-wider rounded-xl transition-all border border-white/10 hover:border-brand-neon hover:text-brand-neon text-xs sm:text-sm">Female</button>
                             </div>
                         </div>
 
-                        <!-- Numeric Inputs (Grid) -->
-                        <div class="grid grid-cols-3 gap-2 sm:gap-4">
-                            <div>
-                                <label class="block text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 text-ellipsis overflow-hidden whitespace-nowrap">Age (yrs)</label>
-                                <input type="number" id="calc-age" min="12" max="90" value="25" class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-2 sm:px-4 py-2.5 sm:py-3 text-white text-center focus:outline-none focus:border-brand-neon transition-all text-sm sm:text-base">
+                        <!-- Numeric Inputs (Flex Row on Mobile, Grid on Tablet/Desktop) -->
+                        <div class="space-y-3 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4">
+                            <!-- Age -->
+                            <div class="flex items-center justify-between sm:block border-b border-white/5 pb-2.5 sm:pb-0 sm:border-0">
+                                <label class="block text-xs sm:text-xs font-bold text-gray-400 uppercase tracking-wider">Age (yrs)</label>
+                                <input type="number" id="calc-age" min="12" max="90" value="25" class="w-28 sm:w-full bg-brand-dark/50 border border-white/10 rounded-xl px-3 py-2 sm:py-3 text-white text-center focus:outline-none focus:border-brand-neon transition-all text-sm sm:text-base">
                             </div>
-                            <div>
-                                <label class="block text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 text-ellipsis overflow-hidden whitespace-nowrap">Height (cm)</label>
-                                <input type="number" id="calc-height" min="100" max="230" value="175" class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-2 sm:px-4 py-2.5 sm:py-3 text-white text-center focus:outline-none focus:border-brand-neon transition-all text-sm sm:text-base">
+                            <!-- Height -->
+                            <div class="flex items-center justify-between sm:block border-b border-white/5 pb-2.5 sm:pb-0 sm:border-0">
+                                <label class="block text-xs sm:text-xs font-bold text-gray-400 uppercase tracking-wider">Height (cm)</label>
+                                <input type="number" id="calc-height" min="100" max="230" value="175" class="w-28 sm:w-full bg-brand-dark/50 border border-white/10 rounded-xl px-3 py-2 sm:py-3 text-white text-center focus:outline-none focus:border-brand-neon transition-all text-sm sm:text-base">
                             </div>
-                            <div>
-                                <label class="block text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 text-ellipsis overflow-hidden whitespace-nowrap">Weight (kg)</label>
-                                <input type="number" id="calc-weight" min="30" max="200" value="70" class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-2 sm:px-4 py-2.5 sm:py-3 text-white text-center focus:outline-none focus:border-brand-neon transition-all text-sm sm:text-base">
+                            <!-- Weight -->
+                            <div class="flex items-center justify-between sm:block border-b border-white/5 pb-2.5 sm:pb-0 sm:border-0">
+                                <label class="block text-xs sm:text-xs font-bold text-gray-400 uppercase tracking-wider">Weight (kg)</label>
+                                <input type="number" id="calc-weight" min="30" max="200" value="70" class="w-28 sm:w-full bg-brand-dark/50 border border-white/10 rounded-xl px-3 py-2 sm:py-3 text-white text-center focus:outline-none focus:border-brand-neon transition-all text-sm sm:text-base">
                             </div>
                         </div>
 
                         <!-- Activity Level -->
-                        <div>
-                            <label class="block text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Activity Level</label>
+                        <div class="flex flex-col sm:block">
+                            <label class="block text-xs sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Activity Level</label>
                             <select id="calc-activity" class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-white focus:outline-none focus:border-brand-neon transition-all cursor-pointer text-xs sm:text-sm">
                                 <option value="1.2">Sedentary (Little/no exercise)</option>
                                 <option value="1.375" selected>Lightly Active (Exercise 1-3 days/wk)</option>
@@ -619,8 +622,8 @@
                         </div>
 
                         <!-- Goal Selector -->
-                        <div>
-                            <label class="block text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Fitness Goal</label>
+                        <div class="flex flex-col sm:block">
+                            <label class="block text-xs sm:text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Fitness Goal</label>
                             <select id="calc-goal" class="w-full bg-brand-dark/50 border border-white/10 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 text-white focus:outline-none focus:border-brand-neon transition-all cursor-pointer text-xs sm:text-sm">
                                 <option value="weight_loss" selected>Lose Weight (Caloric Deficit)</option>
                                 <option value="muscle_gain">Gain Muscle (Caloric Surplus)</option>
@@ -633,14 +636,14 @@
                     <!-- Results & Plan Recommendation Card -->
                     <div class="bg-brand-dark/40 border border-white/5 rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col justify-between h-auto lg:h-full relative z-10 backdrop-blur-md">
                         <div>
-                            <h4 class="text-xl sm:text-2xl font-bold uppercase text-white tracking-wide border-b border-white/10 pb-3 xs:pb-4 flex items-center gap-2">
+                            <h4 class="text-xl sm:text-2xl font-bold uppercase text-white tracking-wide border-b border-white/10 pb-3 flex items-center gap-2">
                                 <i data-lucide="zap" class="text-brand-neon animate-pulse"></i> Your Formula
                             </h4>
 
                             <div class="my-6 sm:my-8 text-center">
-                                <span class="text-[10px] sm:text-xs md:text-sm font-bold text-gray-400 uppercase tracking-wider sm:tracking-widest block mb-2">Estimated Daily Requirement</span>
+                                <span class="text-xs sm:text-xs md:text-sm font-bold text-gray-400 uppercase tracking-wider sm:tracking-widest block mb-2">Estimated Daily Requirement</span>
                                 <div class="flex items-baseline justify-center gap-1.5 sm:gap-2 flex-wrap">
-                                    <span id="calc-result" class="text-4xl xs:text-5xl sm:text-6xl font-black text-brand-neon tracking-tighter">2,154</span>
+                                    <span id="calc-result" class="text-3xl sm:text-5xl md:text-6xl font-black text-brand-neon tracking-tighter">2,154</span>
                                     <span class="text-base sm:text-xl font-bold text-gray-400">kcal/day</span>
                                 </div>
                                 <p id="calc-summary" class="text-xs sm:text-sm text-gray-400 mt-3 sm:mt-4 max-w-sm mx-auto">To achieve your weight loss goals, we recommend a targeted calorie deficit plan.</p>
@@ -651,11 +654,11 @@
                                 <div class="flex items-center gap-3 mb-2">
                                     <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-brand-neon flex items-center justify-center text-black font-black text-xs sm:text-sm flex-shrink-0">✓</div>
                                     <div>
-                                        <span class="text-[10px] sm:text-xs font-bold text-gray-400 uppercase tracking-wider block">Recommended Plan</span>
+                                        <span class="text-xs sm:text-xs font-bold text-gray-400 uppercase tracking-wider block">Recommended Plan</span>
                                         <h5 id="rec-plan-name" class="font-display font-black text-sm sm:text-base md:text-lg text-white uppercase tracking-wide">PRO TRANSFORMATION</h5>
                                     </div>
                                 </div>
-                                <p id="rec-plan-desc" class="text-[10px] sm:text-xs text-gray-400 leading-relaxed">Includes complete customized diet mapping, 1-on-1 personal training, and unlimited access to CrossFit arena.</p>
+                                <p id="rec-plan-desc" class="text-xs text-gray-400 leading-relaxed">Includes complete customized diet mapping, 1-on-1 personal training, and unlimited access to CrossFit arena.</p>
                             </div>
                         </div>
 
